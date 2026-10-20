@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Default Dark Mode Palette */
+    --c-white: #ffffff;
+    --c-black: #000000;
+    
+    --c-neutral-50: #fafafa;
+    --c-neutral-100: #f5f5f5;
+    --c-neutral-200: #e5e5e5;
+    --c-neutral-300: #d4d4d4;
+    --c-neutral-400: #a3a3a3;
+    --c-neutral-500: #737373;
+    --c-neutral-600: #525252;
+    --c-neutral-700: #404040;
+    --c-neutral-800: #262626;
+    --c-neutral-900: #171717;
+    --c-neutral-950: #0a0a0a;
+  }
+
+  :root.light {
+    /* Inverted Palette for Light Mode */
+    --c-white: #0a0a0a;
+    --c-black: #ffffff;
+    
+    /* Invert Neutrals to create light theme */
+    --c-neutral-50: #171717; 
+    --c-neutral-100: #262626;
+    --c-neutral-200: #404040;
+    --c-neutral-300: #525252;
+    --c-neutral-400: #737373;
+    --c-neutral-500: #a3a3a3;
+    --c-neutral-600: #d4d4d4;
+    --c-neutral-700: #e5e5e5;
+    --c-neutral-800: #f5f5f5;
+    --c-neutral-900: #fafafa;
+    --c-neutral-950: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-neutral-950 text-white font-sans;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+  
+  /* Map Tailwind colors to our CSS variables */
+  --color-white: var(--c-white);
+  --color-black: var(--c-black);
+  
+  --color-neutral-50: var(--c-neutral-50);
+  --color-neutral-100: var(--c-neutral-100);
+  --color-neutral-200: var(--c-neutral-200);
+  --color-neutral-300: var(--c-neutral-300);
+  --color-neutral-400: var(--c-neutral-400);
+  --color-neutral-500: var(--c-neutral-500);
+  --color-neutral-600: var(--c-neutral-600);
+  --color-neutral-700: var(--c-neutral-700);
+  --color-neutral-800: var(--c-neutral-800);
+  --color-neutral-900: var(--c-neutral-900);
+  --color-neutral-950: var(--c-neutral-950);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-neutral-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-neutral-800);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-neutral-600);
+}
