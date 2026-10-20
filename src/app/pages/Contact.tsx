@@ -134,10 +134,10 @@ export const Contact = () => {
                 <div className="flex items-center justify-between mb-6">
                    <div className="flex items-center gap-4">
                      <div className="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden flex items-center justify-center">
-                        <span className="font-bold text-neutral-500">AD</span>
+                        <span className="font-bold text-neutral-500">MX</span>
                      </div>
                      <div>
-                       <div className="font-bold">Alex Design</div>
+                       <div className="font-bold">Myrix</div>
                        <div className="text-sm text-neutral-500">15 min Meeting</div>
                      </div>
                    </div>

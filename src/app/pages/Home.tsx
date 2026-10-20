@@ -108,7 +108,7 @@ export const Home = () => {
                   {"★★★★★"}
                 </div>
                 <p className="text-neutral-300 mb-8 leading-relaxed">
-                  "Alex transformed our product. The attention to detail and ability to translate complex requirements into a simple, beautiful interface is unmatched."
+                  "Myrix transformed our product. The attention to detail and ability to translate complex requirements into a simple, beautiful interface is unmatched."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-neutral-700" />

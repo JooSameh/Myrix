@@ -1,4 +1,4 @@
-# Premium Portfolio Website
+# Myrix
 
 Showcase your design expertise with a premium portfolio website that highlights your work, engages clients, and drives conversions through stunning visuals and interactive elements.
 

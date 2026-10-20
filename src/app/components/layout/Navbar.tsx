@@ -41,7 +41,7 @@ export const Navbar = () => {
           className="text-2xl font-bold tracking-tighter text-white cursor-pointer z-50 mix-blend-difference"
           onClick={() => navigate('home')}
         >
-          ALEX<span className="text-indigo-500">.</span>
+          MYRIX<span className="text-indigo-500">.</span>
         </div>
 
         {/* Desktop Menu */}

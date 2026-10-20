@@ -53,7 +53,7 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
           transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           className="text-4xl md:text-6xl font-bold tracking-tighter"
         >
-          ALEX<span className="text-indigo-500">.</span>
+          MYRIX<span className="text-indigo-500">.</span>
         </motion.h1>
       </div>
 

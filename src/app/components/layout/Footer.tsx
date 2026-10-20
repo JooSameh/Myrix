@@ -26,7 +26,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-8 md:text-right">
             <div>
               <h3 className="text-neutral-500 text-sm uppercase tracking-widest mb-4">Contact</h3>
-              <p className="text-lg hover:text-indigo-400 transition-colors cursor-pointer">hello@alex.design</p>
+              <p className="text-lg hover:text-indigo-400 transition-colors cursor-pointer">hello@myrix.com</p>
               <p className="text-lg">+1 (555) 123-4567</p>
             </div>
             <div>
@@ -47,7 +47,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-neutral-500 text-sm">
-          <p>© 2024 Alex Design. All rights reserved.</p>
+          <p>© 2026 Myrix. All rights reserved.</p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
