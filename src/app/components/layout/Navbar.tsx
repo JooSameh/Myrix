@@ -38,10 +38,15 @@ export const Navbar = () => {
         )}
       >
         <div 
-          className="text-2xl font-bold tracking-tighter text-white cursor-pointer z-50 mix-blend-difference"
+          className="flex items-center gap-3 text-2xl font-bold tracking-tighter text-white cursor-pointer z-50"
           onClick={() => navigate('home')}
         >
-          MYRIX<span className="text-indigo-500">.</span>
+          <img
+            src="/assets/aistudio/image_867abc8b.png"
+            alt="Myrix Logo"
+            className="w-9 h-9 object-contain rounded-lg"
+          />
+          <span>MYRIX<span className="text-indigo-500">.</span></span>
         </div>
 
         {/* Desktop Menu */}

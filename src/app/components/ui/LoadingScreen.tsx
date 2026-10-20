@@ -46,7 +46,15 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       </div>
 
       {/* Center Brand */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden flex flex-col items-center gap-5">
+        <motion.img
+          src="/assets/aistudio/image_867abc8b.png"
+          alt="Myrix Logo"
+          initial={{ scale: 0.8, opacity: 0, y: 40 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
+          className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-2xl"
+        />
         <motion.h1
           initial={{ y: 100 }}
           animate={{ y: 0 }}
