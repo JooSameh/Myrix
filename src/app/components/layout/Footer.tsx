@@ -10,6 +10,16 @@ export const Footer = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-start mb-20">
           <div className="max-w-2xl mb-12 md:mb-0">
+            <div className="flex items-center gap-3 mb-6">
+              <img
+                src="/assets/aistudio/image_867abc8b.png"
+                alt="Myrix Logo"
+                className="w-11 h-11 object-contain rounded-xl"
+              />
+              <span className="text-2xl font-bold tracking-tighter text-white">
+                MYRIX<span className="text-indigo-500">.</span>
+              </span>
+            </div>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-8 leading-tight">
               Let's create something <br />
               <span className="text-indigo-500">unforgettable</span> together.

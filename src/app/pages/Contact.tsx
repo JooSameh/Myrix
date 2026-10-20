@@ -133,12 +133,14 @@ export const Contact = () => {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
                    <div className="flex items-center gap-4">
-                     <div className="w-12 h-12 rounded-full bg-neutral-200 overflow-hidden flex items-center justify-center">
-                        <span className="font-bold text-neutral-500">MX</span>
-                     </div>
+                     <img
+                       src="/assets/aistudio/image_867abc8b.png"
+                       alt="Myrix Logo"
+                       className="w-12 h-12 rounded-full bg-neutral-950 p-1.5 object-contain"
+                     />
                      <div>
-                       <div className="font-bold">Myrix</div>
-                       <div className="text-sm text-neutral-500">15 min Meeting</div>
+                       <div className="font-bold">Myrix Agency</div>
+                       <div className="text-sm text-neutral-500">15 min Discovery Call</div>
                      </div>
                    </div>
                 </div>

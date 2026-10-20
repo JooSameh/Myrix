@@ -65,7 +65,7 @@ export const Services = () => {
 
       <Section className="bg-neutral-900/30">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-4xl font-bold mb-16 text-center">How I Work</h2>
+          <h2 className="text-4xl font-bold mb-16 text-center">How Myrix Works</h2>
           <div className="grid md:grid-cols-4 gap-8">
              {timeline.map((item, i) => (
                <div key={i} className="relative">
@@ -83,9 +83,9 @@ export const Services = () => {
 
       <Section>
         <div className="container mx-auto px-6 md:px-12 bg-indigo-900/20 rounded-3xl p-12 md:p-24 text-center border border-indigo-500/20">
-           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to start?</h2>
+           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to scale with Myrix?</h2>
            <p className="text-xl text-neutral-300 mb-10 max-w-2xl mx-auto">
-             Let's discuss your project and how I can help you achieve your goals.
+             Let's discuss your project and how our teams can help your brand grow.
            </p>
            <Button size="lg" onClick={() => navigate('contact')}>Book a 30-min Discovery Call</Button>
         </div>

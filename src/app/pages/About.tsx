@@ -8,17 +8,25 @@ export const About = () => {
   return (
     <div className="bg-neutral-950 min-h-screen text-white pt-24">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
            <motion.div
              initial={{ opacity: 0, scale: 0.95 }}
              animate={{ opacity: 1, scale: 1 }}
              transition={{ duration: 0.8 }}
+             className="relative bg-neutral-900/80 border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col items-center justify-center text-center shadow-2xl overflow-hidden"
            >
+              <div className="absolute -top-24 -right-24 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none" />
               <img 
-                src="https://images.unsplash.com/photo-1658909835269-e76abd3ffb5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMGNyZWF0aXZlJTIwZGlyZWN0b3IlMjBibGFjayUyMGFuZCUyMHdoaXRlfGVufDF8fHx8MTc2NTQzNTYxNXww&ixlib=rb-4.1.0&q=80&w=1080" 
-                alt="Portrait" 
-                className="w-full rounded-lg shadow-2xl"
+                src="/assets/aistudio/image_867abc8b.png" 
+                alt="Myrix Agency Logo" 
+                className="w-40 h-40 md:w-52 md:h-52 object-contain rounded-2xl mb-6 relative z-10"
               />
+              <h3 className="text-3xl font-bold tracking-tighter mb-2 relative z-10">
+                MYRIX<span className="text-indigo-500">.</span>
+              </h3>
+              <p className="text-sm text-neutral-400 uppercase tracking-widest relative z-10">
+                Creative · Web &amp; IT · Digital Marketing Agency
+              </p>
            </motion.div>
            <div>
              <motion.h1 
@@ -26,26 +34,26 @@ export const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8"
               >
-                Beyond the <br /><span className="text-indigo-500">Pixels.</span>
+                We Are <br /><span className="text-indigo-500">Myrix.</span>
              </motion.h1>
              <p className="text-xl text-neutral-300 mb-8 leading-relaxed">
-               Specializing in Video Editing, Motion Graphics, Graphic Design, Websites &amp; IT Solutions, Digital Marketing, and Social Media Management — turning ambitious ideas into high-performing visual and technical experiences.
+               Myrix is an integrated digital agency uniting six specialized departments: Video Editing, Motion Graphics, Graphic Design, Websites &amp; IT Solutions, Digital Marketing, and Social Media Management.
              </p>
              <p className="text-lg text-neutral-400 mb-8 leading-relaxed">
-               Over the past decade, we've partnered with startups and enterprise brands alike, helping them build scalable web &amp; IT platforms, produce standout creative visuals &amp; motion, and scale their social media and marketing reach.
+               We partner with ambitious startups and established enterprises to build high-performance digital platforms, craft unforgettable visual &amp; motion campaigns, and drive measurable revenue growth.
              </p>
-             <Button variant="outline" icon={<Download size={18} />}>Download Profile</Button>
+             <Button variant="outline" icon={<Download size={18} />}>Download Company Profile</Button>
            </div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-16 mb-24">
            <div>
-              <h3 className="text-2xl font-bold mb-8">Core Expertise</h3>
+              <h3 className="text-2xl font-bold mb-8">Our Specialized Divisions</h3>
               <div className="space-y-8">
                  {[
-                   { role: 'Websites & Full-Stack IT Solutions', company: 'Web Development, Systems & Cloud Architecture', period: 'Full Lifecycle' },
-                   { role: 'Video Editing, Motion & Graphic Design', company: 'Post-Production, 2D/3D Motion & Brand Identity', period: 'Creative Production' },
-                   { role: 'Digital Marketing & Social Media Specialist', company: 'Performance Campaigns, Content & Growth Strategy', period: 'Brand Scaling' },
+                   { role: 'Websites & Full-Stack IT Solutions', company: 'Custom Web Platforms, E-Commerce & IT Infrastructure', period: 'Engineering Division' },
+                   { role: 'Video Editing, Motion & Graphic Design', company: 'Post-Production, 2D/3D Motion Graphics & Brand Identity', period: 'Creative Studio' },
+                   { role: 'Digital Marketing & Social Media Specialist', company: 'Performance Ads, Content Strategy & Community Growth', period: 'Growth Division' },
                  ].map((job, i) => (
                    <div key={i} className="border-l-2 border-neutral-800 pl-6 py-1">
                       <h4 className="text-xl font-bold">{job.role}</h4>
@@ -57,12 +65,12 @@ export const About = () => {
            </div>
            
            <div>
-              <h3 className="text-2xl font-bold mb-8">Awards & Recognition</h3>
+              <h3 className="text-2xl font-bold mb-8">Agency Recognition</h3>
               <div className="space-y-6">
                  {[
-                   { award: 'Site of the Day', org: 'Awwwards', year: '2023' },
-                   { award: 'Best Mobile UX', org: 'Webby Awards', year: '2022' },
-                   { award: 'Developer Choice', org: 'CSS Design Awards', year: '2021' },
+                   { award: 'Agency of the Year Nominee', org: 'Awwwards', year: '2025' },
+                   { award: 'Best Integrated Digital Campaign', org: 'Webby Awards', year: '2024' },
+                   { award: 'Excellence in Web & Motion Systems', org: 'CSS Design Awards', year: '2024' },
                  ].map((award, i) => (
                    <div key={i} className="flex justify-between items-center border-b border-white/10 pb-4">
                       <div>
